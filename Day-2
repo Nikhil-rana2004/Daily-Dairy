@@ -1,0 +1,79 @@
+Day 2 learn list and tuple in python
+colors = ['red', 'blue', 'green', 'yellow']
+print(colors[0])
+print(colors[1])
+print(colors[3])
+print(colors[1:4])
+print(colors[1:3])
+red
+blue
+yellow
+['blue', 'green', 'yellow']
+['blue', 'green']
+water_level = [730, 709, 682, 712, 733, 751, 740]
+water_level.remove(682)
+water_level.insert(2,693)
+print(water_level)
+[730, 709, 693, 712, 733, 751, 740]
+water_level = [730, 709, 693, 712, 733, 751, 740]
+water_level.append(772)
+print(water_level)
+[730, 709, 693, 712, 733, 751, 740, 772]
+Double-click (or enter) to edit
+water_level = [730, 709, 682, 712, 733, 751, 740,772]
+water_level.extend([772,770,7745])
+print(water_level )
+[730, 709, 682, 712, 733, 751, 740, 772, 772, 770, 7745]
+Double-click (or enter) to edit
+water_level = [730, 709, 682, 712, 733, 751, 740]
+water_level.pop(0)
+print(water_level)
+water_level.remove(709)
+print(water_level)
+[709, 682, 712, 733, 751, 740]
+[682, 712, 733, 751, 740]
+color=("red","green","blue")
+print(color[1])
+green
+---------------------------------------------------------------------------
+AttributeError Traceback (most recent call last)
+<ipython-input-32-3c8bc736a741> in <cell line: 2>()
+ 1 water_level = (730, 709, 682, 712, 733, 751, 740)
+----> 2 water_level.pop()
+ 3 print(water_level)
+AttributeError: 'tuple' object has no attribute 'pop'
+water_level = (730, 709, 682, 712, 733, 751, 740)
+water_level.pop()
+print(water_level)
+Start coding or generate with AI.
+numbers = (1, 2, 3, 4, 5)
+print(numbers[1:4])
+print(numbers[::-1])
+(2, 3, 4)
+(5, 4, 3, 2, 1)
+6/24/24, 11:24 PM day_2.ipynb - Colab
+https://colab.research.google.com/github/Nitingarg01/Daily-dairy/blob/main/day_2.ipynb 1/2
+fruits=("apple","banana")
+berries=("strawberry","blueberry")
+combine_fruits=fruits+berries
+print(combine_fruits)
+print(combine_fruits*3)
+('apple', 'banana', 'strawberry', 'blueberry')
+('apple', 'banana', 'strawberry', 'blueberry', 'apple', 'banana', 'strawberry', 'blueberry', 'apple', 'banana', 'strawberry', 'blueberry')
+grades=(90,85,92,88,95)
+print(grades.count(88))
+print(grades.index(92))
+1
+2
+mixed_types=("apple",42,3.14)
+print(mixed_types[1])
+42
+Start coding or generate with AI.
+lis=["cat", "dog", "rabbit"]
+y=list(lis)
+animals=tuple(y)
+print(animals)
+('cat', 'dog', 'rabbit')
+outer_tuple=("animals",("red","green","yellow"))
+print(outer_tuple[1][1])
+green
